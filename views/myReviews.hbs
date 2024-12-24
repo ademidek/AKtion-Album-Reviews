@@ -4,22 +4,20 @@
   <table>
     <thead>
       <tr>
-        <th>Course Number</th>
-        <th>Course Name</th>
-        <th>Semester</th>
+        <th>Album Title</th>
+        <th>Album Artist</th>
         <th>Year</th>
-        <th>Professor</th>
+        <th>Rating</th>
         <th>Review</th>
       </tr>
     </thead>
     <tbody>
       {{#each reviews}}
         <tr>
-          <td>{{this.courseNumber}}</td>
-          <td>{{this.courseName}}</td>
-          <td>{{this.semester}}</td>
+          <td>{{this.albumTitle}}</td>
+          <td>{{this.albumArtist}}</td>
           <td>{{this.year}}</td>
-          <td>{{this.professor}}</td>
+          <td>{{this.rating}}</td>
           <td>{{this.review}}</td>
         </tr>
       {{/each}}
@@ -29,4 +27,4 @@
   <p>No reviews added yet.</p>
 {{/if}}
 
-<p><a href="/">Back to All Reviews</a></p>
+<p><a href="/">Back to All Album Reviews</a></p>
