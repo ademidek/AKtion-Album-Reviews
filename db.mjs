@@ -22,12 +22,12 @@ mongoose.connection.once('open', () => {
 
 // Schema for reviews
 const ReviewSchema = new mongoose.Schema({
-  courseNumber: { type: String, required: true },
-  courseName: { type: String, required: true },
-  semester: String,
-  year: { type: Number, min: 2000, max: new Date().getFullYear() },
-  professor: String,
-  review: { type: String, required: true }
+  albumName: { type: String, required: true },
+  albumArtist: { type: String, required: true },
+  genre: { type: String, required: true },
+  year: { type: Number, min: 1900, max: new Date().getFullYear() },
+  rating: String,
+  review: { type: String, required: false }
 });
 
 // Create and export the model

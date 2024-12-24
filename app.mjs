@@ -41,18 +41,24 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', async (req, res) => {
   try {
     let query = {};
-    if (req.query.courseNumber) {
-      query.courseNumber = { $regex: req.query.courseNumber, $options: 'i' };
+    if (req.query.albumTitle) {
+      query.albumTitle = { $regex: req.query.albumTitle, $options: 'i' };
     }
-    if (req.query.courseName) {
-      query.courseName = { $regex: req.query.courseName, $options: 'i' };
+    if (req.query.albumArtist) {
+      query.albumArtist = { $regex: req.query.albumArtist, $options: 'i' };
     }
-    if (req.query.professor) {
-      query.professor = { $regex: req.query.professor, $options: 'i' };
+    if (req.query.genre) {
+      query.genre = { $regex: req.query.genre, $options: 'i' };
+    }
+    if (req.query.year) {
+      query.genre = { $regex: req.query.year, $options: 'i' };
+    }
+    if (req.query.rating) {
+      query.genre = { $regex: req.query.rating, $options: 'i' };
     }
 
     const reviews = await Review.find(query).lean();
-    res.render('reviews', { title: "All Reviews", reviews, count: req.session.views });
+    res.render('reviews', { title: "All Album Reviews", reviews, count: req.session.views });
   } catch (err) {
     console.error("Error retrieving reviews:", err);
     res.status(500).send("Server error occurred.");
