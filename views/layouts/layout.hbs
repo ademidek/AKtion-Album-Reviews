@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - AITY-THREE ISSA B</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" media="screen">
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>AITY-THREE ISSA B</h1>
+        <h3>An anonymous course review site.</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">All reviews</a></li>
+            <li><a href="/reviews/mine">My reviews</a></li>
+            <li><a href="/reviews/add">Add review!</a></li>
+        </ul>
+    </nav>
+    <div class="about-session">
+        Your session's total page visits: {{ pageVisits }}
+    </div>
+    <div id="content">
+        {{{ body }}}
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block; 
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #555;
+    color: #c00;
+    border-radius: 0;
+}
+
+.about-session {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    width: 90%;
+}
+
+.welcome {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
+
+form {
+    margin: auto;            
+    width: 100%;             
+    padding: 20px;           
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+}
