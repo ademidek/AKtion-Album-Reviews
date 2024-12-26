@@ -22,6 +22,7 @@ mongoose.connection.once('open', () => {
 
 // Schema for reviews
 const ReviewSchema = new mongoose.Schema({
+  albumCover: {type: Image, required: false},
   albumName: { type: String, required: true },
   albumArtist: { type: String, required: true },
   genre: { type: String, required: true },

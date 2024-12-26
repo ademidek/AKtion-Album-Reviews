@@ -1,6 +1,10 @@
 <h1>{{title}}</h1>
 
 <form action="/reviews/add" method="POST">
+
+    <label for="albumCover">Album Cover:</label>
+    <input type="image" id="albumCover" name="albumCover">
+
     <label for="albumTitle">Album Title:</label>
     <input type="text" id="albumTitle" name="albumTitle" required>
 
@@ -17,7 +21,7 @@
     <input type="text" id="rating" name="rating" required>
 
     <label for="review">Review:</label>
-    <textarea id="review" name="review" required></textarea>
+    <textarea id="review" name="review" ></textarea>
 
     <button type="submit">Add Review</button>
 </form>

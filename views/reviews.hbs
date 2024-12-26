@@ -19,6 +19,7 @@
 <table>
     <thead>
         <tr>
+            <th>Album Cover</th>
             <th>Album Name</th>
             <th>Album Artist</th>
             <th>Genre</th>
@@ -30,6 +31,7 @@
     <tbody>
         {{#each reviews}}
         <tr>
+            <td>{{this.albumCover}}</td>
             <td>{{this.albumTitle}}</td>
             <td>{{this.albumArtist}}</td>
             <td>{{this.genre}}</td>
